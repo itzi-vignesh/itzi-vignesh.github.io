@@ -1,0 +1,68 @@
+# Robots.txt for Hack4Life - GitHub Student Developer Pack Guide
+# Optimized for maximum SEO visibility and proper crawler guidance
+
+User-agent: *
+Allow: /
+
+# Prioritize main content areas
+Allow: /index.html
+Allow: /github-student-pack-guide-2025.jpg
+Allow: /favicon.svg
+Allow: /apple-touch-icon.png
+Allow: /favicon-*.png
+Allow: /site.webmanifest
+Allow: /ads.txt
+
+# Block unnecessary files to save crawl budget
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.log
+Disallow: /*.tmp
+Disallow: /test/
+Disallow: /staging/
+
+# Allow all major search engines with optimized crawl delays
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 3
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Block problematic SEO bots to preserve crawl budget
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# SEO Enhancement: Sitemap locations
+Sitemap: https://hack4life.me/sitemap.xml
+Sitemap: https://gsep.hack4life.me/sitemap.xml
+
+# Additional guidance for search engines
+# Main domain serves as optimized landing page
+# Full comprehensive guide available at gsep.hack4life.me
